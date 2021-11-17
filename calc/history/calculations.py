@@ -26,10 +26,10 @@ class Calculations:
 
     @staticmethod
     def get_calculation(num):
-        """ gets calc from history"""
+        """ get a specific calculation from history"""
         return Calculations.history[num]
 
     @staticmethod
     def add_calculation(calculation):
-        """" gets calc from history"""
+        """ get a specific calculation from history"""
         return Calculations.history.append(calculation)

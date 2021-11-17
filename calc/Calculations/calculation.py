@@ -1,12 +1,10 @@
-"""This is our calculation base class/abstract class"""
+"""Calculation Class"""
 
 
 class Calculation:
     """ calculation abstract base class"""
     # pylint: disable=too-few-public-methods
-    def __init__(self, value_a, value_b):
-        self.value_a = value_a
-        self.value_b = value_b
+    def __init__(self, values: tuple):
         """ constructor method"""
         self.values = Calculation.convert_args_to_list_float(values)
 
