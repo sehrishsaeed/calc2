@@ -1,6 +1,10 @@
 # Calculator Project Setup
 [![Build Status](https://app.travis-ci.com/sehrishsaeed/calc2.svg?branch=main)](https://app.travis-ci.com/sehrishsaeed/calc2)
 
+
+# Refactor Branch 
+[![Build Status](https://app.travis-ci.com/sehrishsaeed/calc2.svg?branch=main)](https://app.travis-ci.com/sehrishsaeed/calc2.svg?branch=pt2_refactor)
+
 Run Pip Install
 pip install -r requirements.txt
 
