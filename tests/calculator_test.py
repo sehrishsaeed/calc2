@@ -1,8 +1,9 @@
 """Testing the Calculator"""
 import pytest
-import csv
+import pandas as pd
 from calc.calculator import Calculator
 from calc.history.calculations import Calculations
+from calc.Calculations.addition import Addition
 
 
 @pytest.fixture
@@ -16,13 +17,12 @@ def clear_history_fixture():
 def test_calculator_add_static(clear_history_fixture):
     """testing that our calculator has a static method for addition"""
     # pylint: disable=unused-argument,redefined-outer-name
-    file = open("Addition.csv")
-    csvreader = csv.reader(file)
-    for row in csvreader:
-        print(int(row[0]), int(row[1]))
-        assert Calculator.add_numbers(int(row[0]), int(row[1])) ==int(row[2])
-
-
+    csv_reader = pd.read_csv("tests/Addition.csv")
+    for index, row in csv_reader.iterrows():
+        values = (row.value1, row.value2)
+        addition = Addition.create(values)
+        addition_result = csv_reader["result"][index]
+        assert addition.get_result() == addition_result
 
 
 def test_calculator_subtract_static(clear_history_fixture):

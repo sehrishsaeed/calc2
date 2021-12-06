@@ -1,5 +1,6 @@
 """Calculation Class"""
 
+from abc import abstractmethod
 
 class Calculation:
     """ calculation abstract base class"""
@@ -15,3 +16,8 @@ class Calculation:
         for item in values:
             list_values_float.append(float(item))
         return list_values_float
+
+    @abstractmethod
+    def get_result(self):
+        """creating this class to show overriding polymorphism"""
+        return True
