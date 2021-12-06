@@ -19,3 +19,4 @@ setup.py is a config file for pytest
 https://github.com/sehrishsaeed/calc2/blob/part_4/travis.png?raw=true
 
 ![travis](travis.png)
+![traviss](traviss.png)
