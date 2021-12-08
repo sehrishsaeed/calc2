@@ -1,4 +1,5 @@
 """A simple flask web app"""
+#!/bin/sh
 from flask import Flask, request
 from flask import render_template
 from calc.calculator import Calculator
